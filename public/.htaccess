@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Security Headers (Hardening)
+  <IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    # Header set Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apix.cyberxtron.com https://incidents.cyberxtron.com; img-src 'self' data: https:;"
+  </IfModule>
+
+  # 1. API Reverse Proxy ke file api.php
+  # Semua call ke domain.com/api/cyberx/ akan di-handle oleh api.php tanpa error 404
+  RewriteRule ^api/cyberx/(.*)$ api.php?req=$1 [QSA,L]
+
+  # 2. Fallback untuk React Router (Biar bisa di-refresh/tidak 404 pas ke halaman lain)
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

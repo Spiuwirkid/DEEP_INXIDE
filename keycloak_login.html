@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="en"><head><script>
+    window.kcContext=  
+(()=>{
+
+    const out = {
+    "execution": "5d2fcdc0-7b39-4ba9-95f0-fade2eb8fd11",
+    "social": {
+        "displayInfo": true,
+    },
+    "auth": {
+        "showResetCredentials": false,
+        "authenticationSelections": [
+            {
+                "helpText": "auth-username-password-form-help-text",
+                "displayName": "auth-username-password-form-display-name",
+                "iconCssClass": "kcAuthenticatorDefaultClass",
+                "authExecId": "5d2fcdc0-7b39-4ba9-95f0-fade2eb8fd11",
+                "authenticationExecution": {
+                    "authenticatorFlow": false,
+                    "conditional": false,
+                    "required": true,
+                    "enabled": true,
+                    "disabled": false,
+                    "id": "5d2fcdc0-7b39-4ba9-95f0-fade2eb8fd11",
+                    "parentFlow": "5660f8e0-fe63-416b-b6c0-f4ed679b97e6",
+                    "authenticator": "auth-username-password-form",
+                    "alternative": false,
+                    "requirement": {
+                        "stableIndex": "0",
+                    },
+                    "priority": "10",
+                },
+            },
+        ],
+        "showUsername": false,
+        "showTryAnotherWayLink": false,
+    },
+    "login": {
+    },
+    "url": {
+        "oauthAction": "\/realms/XTronUsers/login-actions/authenticate",
+        "resourcesPath": "\/resources/n19k2/login/keycloakify-starter-variant-1",
+        "loginAction": "https://auth.cyberxtron.com/realms/XTronUsers/login-actions/authenticate?session_code=mxJ1OuE1nU-vvEO8IarAbPEjqWUvm0WZU2dffOID1Uw&execution=5d2fcdc0-7b39-4ba9-95f0-fade2eb8fd11&client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "loginUrl": "\/realms/XTronUsers/login-actions/authenticate?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "resourcesCommonPath": "\/resources/n19k2/common/keycloak",
+        "firstBrokerLoginUrl": "\/realms/XTronUsers/login-actions/first-broker-login?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "registrationUrl": "\/realms/XTronUsers/login-actions/registration?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "logoutConfirmAction": "\/realms/XTronUsers/protocol/openid-connect/logout/logout-confirm?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        /*If you need 'loginUpdateProfileUrl' on login.ftl, please submit an issue to the Keycloakify repo*/
+        "registrationAction": "https://auth.cyberxtron.com/realms/XTronUsers/login-actions/authenticate?session_code=mxJ1OuE1nU-vvEO8IarAbPEjqWUvm0WZU2dffOID1Uw&execution=5d2fcdc0-7b39-4ba9-95f0-fade2eb8fd11&client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "loginResetCredentialsUrl": "\/realms/XTronUsers/login-actions/reset-credentials?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        /*If you need 'loginUsernameReminderUrl' on login.ftl, please submit an issue to the Keycloakify repo*/
+        "resourcesUrl": "\/resources/n19k2?client_id=xtronportal&tab_id=Ai_cGnQokW0/login/keycloakify-starter-variant-1",
+        "loginRestartFlowUrl": "\/realms/XTronUsers/login-actions/restart?client_id=xtronportal&tab_id=Ai_cGnQokW0",
+        "oauth2DeviceVerificationAction": "\/realms/XTronUsers/login-actions/authenticate",
+    },
+    "messagesPerField": {
+    },
+    "client": {
+        "clientId": "xtronportal",
+        "description": "",
+        "baseUrl": "",
+        "name": "CyberXTron Portal",
+        "attributes": {
+            "client.secret.creation.time": "1702308864",
+            "login_theme": "keycloakify-starter-variant-1",
+            "post.logout.redirect.uris": "+",
+            "oauth2.device.authorization.grant.enabled": "false",
+            "backchannel.logout.revoke.offline.tokens": "false",
+            "use.refresh.tokens": "true",
+            "oidc.ciba.grant.enabled": "false",
+            "backchannel.logout.session.required": "false",
+            "client_credentials.use_refresh_token": "false",
+            "acr.loa.map": "{}",
+            "require.pushed.authorization.requests": "false",
+            "tls.client.certificate.bound.access.tokens": "false",
+            "display.on.consent.screen": "false",
+            "token.response.type.bearer.lower-case": "false",
+        },
+    },
+    "realm": {
+        "displayName": "XTronUsers",
+        "registrationAllowed": true,
+        "displayNameHtml": "XTronUsers",
+        "resetPasswordAllowed": true,
+        "resetCredentialsActionTokenLifespanMinutes": "5",
+        "password": true,
+        "actionTokenGeneratedByUserLifespanMinutes": "5",
+        "internationalizationEnabled": false,
+        "idpVerifyAccountLinkActionTokenLifespanMinutes": "5",
+        "verifyEmailActionTokenLifespanMinutes": "5",
+        "loginWithEmailAllowed": true,
+        "duplicateEmailsAllowed": false,
+        "editUsernameAllowed": false,
+        "name": "XTronUsers",
+        "rememberMe": false,
+        "registrationEmailAsUsername": true,
+        "identityFederationEnabled": true,
+    },
+    "scripts": [
+    ],
+    "properties": {
+        "kcLogoIdP-facebook": "fa fa-facebook",
+        "parent": "keycloak",
+        "kcAuthenticatorOTPClass": "fa fa-mobile list-view-pf-icon-lg",
+        "kcLogoIdP-bitbucket": "fa fa-bitbucket",
+        "kcAuthenticatorWebAuthnClass": "fa fa-key list-view-pf-icon-lg",
+        "kcWebAuthnDefaultIcon": "pficon pficon-key",
+        "kcLogoIdP-stackoverflow": "fa fa-stack-overflow",
+        "kcSelectAuthListItemClass": "pf-l-stack__item select-auth-box-parent pf-l-split",
+        "kcLogoIdP-microsoft": "fa fa-windows",
+        "kcLocaleItemClass": "pf-c-dropdown__menu-item",
+        "kcLoginOTPListItemHeaderClass": "pf-c-tile__header",
+        "kcLoginOTPListItemIconBodyClass": "pf-c-tile__icon",
+        "kcInputHelperTextAfterClass": "pf-c-form__helper-text pf-c-form__helper-text-after",
+        "kcFormClass": "form-horizontal",
+        "kcSelectAuthListClass": "pf-l-stack select-auth-container",
+        "kcInputClassRadioCheckboxLabelDisabled": "pf-m-disabled",
+        "kcSelectAuthListItemIconClass": "pf-l-split__item select-auth-box-icon",
+        "kcRecoveryCodesWarning": "kc-recovery-codes-warning",
+        "kcFormSettingClass": "login-pf-settings",
+        "kcWebAuthnBLE": "fa fa-bluetooth-b",
+        "kcInputWrapperClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+        "kcSelectAuthListItemArrowIconClass": "fa fa-angle-right fa-lg",
+        "meta": "viewport==width=device-width,initial-scale=1",
+        "styles": "css/login.css",
+        "kcFeedbackAreaClass": "col-md-12",
+        "kcLogoIdP-google": "fa fa-google",
+        "kcCheckLabelClass": "pf-c-check__label",
+        "kcSelectAuthListItemFillClass": "pf-l-split__item pf-m-fill",
+        "kcAuthenticatorDefaultClass": "fa fa-list list-view-pf-icon-lg",
+        "kcLogoIdP-gitlab": "fa fa-gitlab",
+        "kcFormAreaClass": "col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2",
+        "kcFormButtonsClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+        "kcInputClassRadioLabel": "pf-c-radio__label",
+        "kcAuthenticatorWebAuthnPasswordlessClass": "fa fa-key list-view-pf-icon-lg",
+        "kcSelectAuthListItemHeadingClass": "pf-l-stack__item select-auth-box-headline pf-c-title",
+        "kcInfoAreaClass": "col-xs-12 col-sm-4 col-md-4 col-lg-5 details",
+        "kcLogoLink": "http://www.keycloak.org",
+        "kcContainerClass": "container-fluid",
+        "kcSelectAuthListItemTitle": "select-auth-box-paragraph",
+        "kcHtmlClass": "login-pf",
+        "kcLoginOTPListItemTitleClass": "pf-c-tile__title",
+        "locales": "ar,ca,cs,da,de,el,en,es,fa,fr,fi,hu,it,ja,lt,nl,no,pl,pt-BR,ru,sk,sv,tr,zh-CN",
+        "kcLogoIdP-openshift-v4": "pf-icon pf-icon-openshift",
+        "kcWebAuthnUnknownIcon": "pficon pficon-key unknown-transport-class",
+        "kcFormSocialAccountNameClass": "kc-social-provider-name",
+        "kcLogoIdP-openshift-v3": "pf-icon pf-icon-openshift",
+        "kcLoginOTPListInputClass": "pf-c-tile__input",
+        "kcWebAuthnUSB": "fa fa-usb",
+        "kcInputClassRadio": "pf-c-radio",
+        "kcWebAuthnKeyIcon": "pficon pficon-key",
+        "kcFeedbackInfoIcon": "fa fa-fw fa-info-circle",
+        "kcCommonLogoIdP": "kc-social-provider-logo kc-social-gray",
+        "stylesCommon": "web_modules/@patternfly/react-core/dist/styles/base.css web_modules/@patternfly/react-core/dist/styles/app.css node_modules/patternfly/dist/css/patternfly.min.css node_modules/patternfly/dist/css/patternfly-additions.min.css lib/pficon/pficon.css",
+        "kcRecoveryCodesActions": "kc-recovery-codes-actions",
+        "kcFormGroupHeader": "pf-c-form__group",
+        "kcFormSocialAccountSectionClass": "kc-social-section kc-social-gray",
+        "kcLogoIdP-instagram": "fa fa-instagram",
+        "kcAlertClass": "pf-c-alert pf-m-inline",
+        "kcHeaderClass": "login-pf-page-header",
+        "kcLabelWrapperClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+        "kcFormSocialAccountLinkClass": "pf-c-login__main-footer-links-item-link",
+        "kcLocaleMainClass": "pf-c-dropdown",
+        "kcTextareaClass": "form-control",
+        "kcButtonBlockClass": "pf-m-block",
+        "kcButtonClass": "pf-c-button",
+        "kcWebAuthnNFC": "fa fa-wifi",
+        "kcLocaleClass": "col-xs-12 col-sm-1",
+        "kcInputClassCheckboxInput": "pf-c-check__input",
+        "kcFeedbackErrorIcon": "fa fa-fw fa-exclamation-circle",
+        "kcInputLargeClass": "input-lg",
+        "kcInputErrorMessageClass": "pf-c-form__helper-text pf-m-error required kc-feedback-text",
+        "kcRecoveryCodesList": "kc-recovery-codes-list",
+        "kcFormSocialAccountListClass": "pf-c-login__main-footer-links kc-social-links",
+        "kcAlertTitleClass": "pf-c-alert__title kc-feedback-text",
+        "kcAuthenticatorPasswordClass": "fa fa-unlock list-view-pf-icon-lg",
+        "kcCheckInputClass": "pf-c-check__input",
+        "kcLogoIdP-linkedin": "fa fa-linkedin",
+        "kcLogoIdP-twitter": "fa fa-twitter",
+        "kcFeedbackWarningIcon": "fa fa-fw fa-exclamation-triangle",
+        "kcResetFlowIcon": "pficon pficon-arrow fa",
+        "kcSelectAuthListItemIconPropertyClass": "fa-2x select-auth-box-icon-properties",
+        "kcFeedbackSuccessIcon": "fa fa-fw fa-check-circle",
+        "kcLoginOTPListClass": "pf-c-tile",
+        "kcSrOnlyClass": "sr-only",
+        "kcFormSocialAccountListGridClass": "pf-l-grid kc-social-grid",
+        "kcButtonDefaultClass": "btn-default",
+        "kcFormGroupErrorClass": "has-error",
+        "kcSelectAuthListItemDescriptionClass": "pf-l-stack__item select-auth-box-desc",
+        "kcSelectAuthListItemBodyClass": "pf-l-split__item pf-l-stack",
+        "import": "common/keycloak",
+        "kcWebAuthnInternal": "pficon pficon-key",
+        "kcSelectAuthListItemArrowClass": "pf-l-split__item select-auth-box-arrow",
+        "kcCheckClass": "pf-c-check",
+        "foo": "bar",
+        "kcContentClass": "col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3",
+        "kcLogoClass": "login-pf-brand",
+        "kcLoginOTPListItemIconClass": "fa fa-mobile",
+        "kcLoginClass": "login-pf-page",
+        "kcSignUpClass": "login-pf-signup",
+        "kcButtonLargeClass": "btn-lg",
+        "kcFormCardClass": "card-pf",
+        "kcLocaleListClass": "pf-c-dropdown__menu pf-m-align-right",
+        "kcInputClass": "pf-c-form-control",
+        "kcFormGroupClass": "form-group",
+        "kcLogoIdP-paypal": "fa fa-paypal",
+        "kcInputClassCheckbox": "pf-c-check",
+        "kcRecoveryCodesConfirmation": "kc-recovery-codes-confirmation",
+        "kcInputClassRadioInput": "pf-c-radio__input",
+        "kcFormSocialAccountListButtonClass": "pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray",
+        "kcInputClassCheckboxLabel": "pf-c-check__label",
+        "kcFormOptionsClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+        "kcFormHeaderClass": "login-pf-header",
+        "kcFormSocialAccountGridItem": "pf-l-grid__item",
+        "kcButtonPrimaryClass": "pf-m-primary",
+        "kcInputHelperTextBeforeClass": "pf-c-form__helper-text pf-c-form__helper-text-before",
+        "kcLogoIdP-github": "fa fa-github",
+        "kcLabelClass": "pf-c-form__label pf-c-form__label-text",
+    },
+};
+
+    out["msg"]= function(){ throw new Error("use import { useKcMessage } from 'keycloakify'"); };
+    out["advancedMsg"]= function(){ throw new Error("use import { useKcMessage } from 'keycloakify'"); };
+
+    out["messagesPerField"]= {
+    
+    
+        "printIfExists": function (fieldName, text) {
+
+                    if(fieldName === "totp" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "userLabel" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "password" ){
+
+
+
+
+
+
+
+
+                                    return undefined;
+
+
+
+
+                    }
+                    if(fieldName === "password-confirm" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "username" ){
+
+
+
+
+
+
+
+
+                                    return undefined;
+
+
+
+
+                    }
+                    if(fieldName === "email" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "firstName" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "lastName" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+                    if(fieldName === "global" ){
+
+
+
+
+
+                                return undefined;
+
+
+
+                    }
+
+                throw new Error(fieldName + "is probably runtime generated, see: https://docs.keycloakify.dev/limitations#field-names-cant-be-runtime-generated");
+
+        },
+        "existsError": function (fieldName) {
+
+                    if(fieldName === "totp" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "userLabel" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "password" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "password-confirm" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "username" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "email" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "firstName" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "lastName" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "global" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+
+                throw new Error(fieldName + "is probably runtime generated, see: https://docs.keycloakify.dev/limitations#field-names-cant-be-runtime-generated");
+
+
+        },
+        "get": function (fieldName) {
+
+
+                    if(fieldName === "totp" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "userLabel" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "password" ){
+
+
+
+
+
+
+                                        return "";
+
+
+
+
+                    }
+                    if(fieldName === "password-confirm" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "username" ){
+
+
+
+
+
+
+                                        return "";
+
+
+
+
+                    }
+                    if(fieldName === "email" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "firstName" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "lastName" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+                    if(fieldName === "global" ){
+
+
+
+                                    return "";
+
+
+
+                    }
+
+                throw new Error(fieldName + "is probably runtime generated, see: https://docs.keycloakify.dev/limitations#field-names-cant-be-runtime-generated");
+
+
+        },
+        "exists": function (fieldName) {
+
+                    if(fieldName === "totp" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "userLabel" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "password" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "password-confirm" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "username" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "email" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "firstName" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "lastName" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+                    if(fieldName === "global" ){
+
+
+
+
+
+                                return false;
+
+
+
+                    }
+
+                throw new Error(fieldName + "is probably runtime generated, see: https://docs.keycloakify.dev/limitations#field-names-cant-be-runtime-generated");
+
+        }
+    };
+
+
+    out["keycloakifyVersion"] = "8.2.1";
+    out["themeVersion"] = "4.8.2";
+    out["themeType"] = "login";
+    out["themeName"] = "keycloakify-starter";
+    out["pageId"] = "login.ftl";
+
+    return out;
+
+})()
+;
+</script>
+
+<style>
+:root {
+    --url8ca495ad5ca5f0b: url(/resources/n19k2/login/keycloakify-starter-variant-1/build/static/media/background.b17d018b7f3ad84fd58a.svg) no-repeat 50% fixed;
+}
+</style>
+<meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/resources/n19k2/login/keycloakify-starter-variant-1/build/fav.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CyberXTron</title><link rel="preload" href="/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-bold-webfont.woff2" as="font" crossorigin="anonymous"><link rel="preload" href="/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-medium-webfont.woff2" as="font" crossorigin="anonymous"><link rel="preload" href="/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-regular-webfont.woff2" as="font" crossorigin="anonymous"><link rel="preload" href="/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-semibold-webfont.woff2" as="font" crossorigin="anonymous"><style>@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-regular-webfont.woff2) format("woff2")}@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-medium-webfont.woff2) format("woff2")}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-semibold-webfont.woff2) format("woff2")}@font-face{font-family:'Work Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/resources/n19k2/login/keycloakify-starter-variant-1/build/fonts/WorkSans/worksans-bold-webfont.woff2) format("woff2")}</style><script defer="defer" src="/resources/n19k2/login/keycloakify-starter-variant-1/build/static/js/main.355f049f.js"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>

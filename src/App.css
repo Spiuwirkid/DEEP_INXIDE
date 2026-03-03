@@ -1,0 +1,53 @@
+/* Reset default Vite styles */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  min-height: 100vh;
+}
+
+/* Cyber Map Animations */
+@keyframes dash-flow {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 8 12;
+  animation: dash-flow 1s linear infinite;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+.glow-effect {
+  filter: drop-shadow(0 0 6px currentColor);
+}
+
+.glow-line {
+  filter: drop-shadow(0 0 5px currentColor);
+  transition: all 0.1s linear;
+  /* Smooth updates */
+}
+
+/* Make the map look more tech/integrated */
+.leaflet-container {
+  background: transparent !important;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 4px !important;
+  color: #fff !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-top: 1px solid rgba(0, 240, 255, 0.3);
+}
